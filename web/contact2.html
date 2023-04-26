@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zxx">
+   <head>
+      <title>Pizza-Pie</title>
+      <meta charset="UTF-8">
+          <script>
+         addEventListener("load", function () {
+         	setTimeout(hideURLbar, 0);
+         }, false);
+         
+         function hideURLbar() {
+         	window.scrollTo(0, 1);
+         }
+      </script>
+      
+      
+      <!--booststrap-->
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    
+      <!-- font-awesome icons -->
+      <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
+    
+      <!--stylesheets-->
+      <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+    
+      <link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+      <link href="//fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+      <link href="//fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+   </head>
+   <body>
+      <div class="header-main" id="home">
+         <!--headder-->
+         <!--navbar-->
+
+      <!--//navbar-->
+      <!-- banner -->
+      <div class="inner_page-banner one-img">
+      </div>
+      <!--//banner -->
+      <!-- short -->
+      <div class="using-border py-3">
+         <div class="inner_breadcrumb  ml-4">
+            <ul class="short_ls">
+               <li>
+                  <a href="index.html">Inicio</a>
+                  <span>/ /</span>
+               </li>
+               <li>Pedir una mesa</li>
+            </ul>
+         </div>
+      </div>
+      <!-- //short-->
+      <!--contact -->
+      <section class="contact py-lg-4 py-md-3 py-sm-3 py-3">
+         <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+            <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Contactenos</h3>
+            <div class="row agile-info-para">
+               <!--contact-map -->
+               <div class="col-lg-4 col-md-4 address_mail_footer_grids">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6552.793344953243!2d-58.25741275675022!3d-34.7959608811103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3293ebc07d41d%3A0xb621f93a438455b0!2sCruce%20Varela%2C%20Florencio%20Varela%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1682379319881!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>               </div>
+               <div class="col-lg-3 col-md-3 col-sm-4 abt-inner-w3layouts-img">
+                  <img src="images/ab3.jpg" alt="" class="img-fluid">
+               </div>
+               <div class="col-lg-5 col-md-5 col-sm-8 contact-list-grid">
+                  <h4> 
+                     Ponerse en contacto </h4>
+                  <p class="pb-3">consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet</p>
+                  <div class="footer_grid_left">
+                     <ul>
+                        <li>
+                           <span class="fas fa-map-marker"> </span>
+                           <p>520, florencio varela, buenos aires
+                        </li>
+                        <li>
+                           <span class="fas fa-envelope"> </span>
+                           <p ><a href="mailto:info@example.com">info@example1.com</a> 
+                           </p>
+                        </li>
+                        <li>
+                           <span class="fas fa-fax"></span>
+                           <p>(000)1122333</p>
+                        </li>
+                        <li>
+                           <span class="fas fa-phone-volume"> </span>
+                           <p>+(000) 123 4565 32</p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="contact-agile-grid-text mt-lg-4 mt-md-3 mt-3">
+              
+                  <h1 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">DELibery</h1>
+                  
+                  <form id="formulario">
+            
+                     <div class="form-group contact-forms">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                      <br>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                     </div>
+              
+                     <div class="form-group contact-forms">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion" required>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                     </div>
+
+                     <button type="submit">Enviar</button>
+                     <button type="submit" onclick="exportarPDF()">Exportar PDF</button>
+                   </form>
+            </div>
+         </div>
+      </section>
+      <!--//contact  -->
+      <section id="contacto" class="footer-reservation py-lg-4 py-md-4 py-sm-3 py-3">
+         <div class="container py-lg-3 py-md-3 py-3">
+            <div class="row text-center">
+               <div class="col-lg-4 wthree-left-right">
+                  <h4 class="pb-lg-3 pb-3">Nuestros Horarios</h4>
+                  <div class="wls-hours-list">
+                     <ul>
+                        <li class="d-flex py-1">Lunes   <span class="time ml-auto"> 9:30-8:30</span></li>
+                        <li class="d-flex py-1">Martes  <span class="time ml-auto"> 9:30-8:30</span></li>
+                        <li class="d-flex py-1">Miercoles<span class="time ml-auto"> 9:30-8:30</span></li>
+                        <li class="d-flex py-1">Jueves <span class="time ml-auto"> 9:30-8:30</span></li>
+                        <li class="d-flex py-1">Viernes  <span class="time ml-auto"> 9:30-8:30</span></li>
+                        <li class="d-flex py-1">Sabado <span class="time ml-auto"> 9:30-8:30</span></li>
+                        <li class="d-flex py-1">Domingo   <span class="time ml-auto"> closed</span></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 wthree-left-right upper-footer">
+                  <div class="middle-mid-grid">
+                     <h4 class="pb-lg-3 pb-3">Hacer una reserva</h4>
+                     <div class="book-here">
+                        <a href="contact2.html" class="text-center">Realizar un pedido</a>
+                        <a href="contact.html" class="text-center">Encontra una mesa</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 wthree-left-right ">
+                  <h4 class="pb-lg-3 pb-3">Nuestro Twitter </h4>
+                  <div class="addres-up">
+                     <ul class="w3agile_footer_grid_list">
+                        <li class="py-1">
+                           Ut aut reiciendis voluptatibus adipiscing
+                           <a href="#">example.com</a> alias, ut aut.
+                           <p>
+                              <span class="fab fa-twitter"></span> 02 days ago
+                           </p>
+                        </li>
+                        <li class="py-1">
+                           Itaque earum rerum hic tenetur a sapiente
+                           <a href="#">example.com</a> ut aut.
+                           <p>
+                              <span class="fab fa-twitter"></span> 03 days ago
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+    
+      <!--subscribe-->
+      <section class="subscribe-footer py-lg-4 py-md-3 py-sm-3 py-3">
+         <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+            <div class="state-us row">
+               <div class="col-lg-6 col-md-6 subscribe-form">
+                  <div class="contact-call text-center pb-md-4 pb-3">
+                     <h4 class="pb-md-3 pb-2"> Llamenos</h4>
+                     <p>+123 4565 32</p>
+                  </div>
+                  <form>
+                     <div class=" email-info">
+                        <div class="form-group fill-all-form">
+                           <input type="email" class="form-control" placeholder="Email" required="">
+                        </div>
+                     </div>
+                     <div class=" email-info text-center">
+                        <button type="submit" class="btn click-me">Subscribe</button>
+                     </div>
+                  </form>
+               </div>
+               <div class="col-lg-6 col-md-6 subcribe-right">
+                  <h4 class="text-center"> Sabrosa pizza</h4>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--//subscribe-->
+      <section class="buttom-footer py-lg-4 py-md-3 py-sm-3 py-3">
+         <div class="container pt-lg-5 pt-md-5 pt-sm-4 pt-4">
+            <div class="row footer-agile-grids ">
+               <div class="col-lg-6 col-md-12 wthree-left-right">
+                  <div class="row">
+                     <div class="col-md-4 footer-header pl-0">
+                        <h5><a href="index.html">Pizza-Pie</a></h5>
+                        <p>Tiempo de diversión y alegría</p>
+                     </div>
+                     <div class="col-md-8 footer-para">
+                        <p>Melbourne,south Brisbane,<br>QLD 4101,Aurstralia.</p>
+                        <p>+(54) 123 4565 32</p>
+                        <p><a href="mailto:info@example.com">mail@example.com</a></p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-12 wthree-left-right">
+                  <h4 class="pb-lg-3 pb-3">Nosotros</h4>
+                  <div class="address-para">
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  </div>
+               </div>
+               <div class="wthree-left-right col-lg-3 col-md-12">
+                  <h4 class="pb-lg-3 pb-3">Seguinos</h4>
+                  <div class="icons">
+                     <ul>
+                        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                        <li><a href="#"><span class="fas fa-envelope"></span></a></li>
+                        <li><a href="#"><span class="fas fa-rss"></span></a></li>
+                        <li><a href="#"><span class="fab fa-vk"></span></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <p>©2023 Pizza-Pie.</p>
+      </footer>
+      <!-- //Footer -->
+      <!--js working-->
+      <script src='js/jquery-2.2.3.min.js'></script>
+      <!--//js working-->
+      <!--pdf-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+      <script>
+         var formulario = document.getElementById("formulario");
+         var nombre = document.getElementById("nombre");
+         var apellido = document.getElementById("apellido");
+         var direccion = document.getElementById("direccion");
+         var email = document.getElementById("email");
+
+         formulario.addEventListener("submit", function(event) {
+         if (!nombre.checkValidity()) {
+            alert("Por favor ingrese su nombre.");
+            event.preventDefault();
+         }
+         
+         if (!apellido.checkValidity()) {
+            alert("Por favor ingrese su apellido.");
+            event.preventDefault();
+         }
+         
+         if (!direccion.checkValidity()) {
+            alert("Por favor ingrese su dirección.");
+            event.preventDefault();
+         }
+         
+         if (!email.checkValidity()) {
+            alert("Por favor ingrese un correo electrónico válido.");
+            event.preventDefault();
+         }
+         });
+         
+
+        
+         function exportarPDF() {
+         var doc = new jsPDF();
+         var nombre = document.getElementById("nombre").value;
+         var apellido = document.getElementById("apellido").value;
+         var direccion = document.getElementById("direccion").value;
+         var email = document.getElementById("email").value;
+         
+         doc.text("Nombre: " + nombre, 10, 10);
+         doc.text("Apellido: " + apellido, 10, 20);
+         doc.text("Dirección: " + direccion, 10, 30);
+         doc.text("Correo electrónico: " + email, 10, 40);
+         
+         doc.save("formulario.pdf");
+         }
+         
+      </script>
+      <!--// validacion-->
+      <!-- start-smoth-scrolling -->
+      <script src="js/move-top.js"></script>
+      <script src="js/easing.js"></script>
+      <script>
+         jQuery(document).ready(function ($) {
+         	$(".scroll").click(function (event) {
+         		event.preventDefault();
+         		$('html,body').animate({
+         			scrollTop: $(this.hash).offset().top
+         		}, 900);
+         	});
+         });
+      </script>
+      <!-- start-smoth-scrolling -->
+      <!-- here stars scrolling icon -->
+      <script>
+         $(document).ready(function () {
+         
+         	var defaults = {
+         		containerID: 'toTop', // fading element id
+         		containerHoverID: 'toTopHover', // fading element hover id
+         		scrollSpeed: 1200,
+         		easingType: 'linear'
+         	};
+         
+         
+         	$().UItoTop({
+         		easingType: 'easeOutQuart'
+         	});
+         
+         });
+      </script>
+      <!-- //here ends scrolling icon -->
+
+      <script>
+   
+      </script>
+      <!--bootstrap working-->
+      <script src="js/bootstrap.min.js"></script>
+
+      <!-- //bootstrap working-->
+   </body>
+</html>
